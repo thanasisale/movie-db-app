@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="40"
+        android:weightSum="100">
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:layout_weight="50"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/listId"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="50">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Transformers 15: The Fallen"
+                android:gravity="center"
+                android:id="@+id/listTitle"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="2015"
+                android:gravity="center"
+                android:id="@+id/listYear"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="60">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Michael Bay"
+                android:gravity="center"
+                android:id="@+id/listDirector"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Action"
+                android:gravity="center"
+                android:id="@+id/listType"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="150min"
+                android:gravity="center"
+                android:id="@+id/listMinutes"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".MovieEdit">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="EDIT MOVIE"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Movie Title"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edDirector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Director Name"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Movie Length"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Movie Type"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Release Year"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/nmAddButton"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateMovie"
+                android:text="Update Movie" />
+
+            <Button
+                android:id="@+id/edShowAll"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Show All" />
+
+            <Button
+                android:id="@+id/edDelete"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="deleteMovie"
+                android:background="@drawable/ic_delete_black_24dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
